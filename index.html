@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little Infinity ♡</title>
+  <meta name="description" content="A little birthday adventure made with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div id="hearts"></div>
+
+  <!-- LOCKED COVER -->
+  <section id="lockScreen" class="screen lock-screen">
+    <div class="lock-stars" aria-hidden="true"></div>
+    <div class="lock-orbit orbit-a"></div>
+    <div class="lock-orbit orbit-b"></div>
+    <div class="lock-content">
+      <p class="eyebrow lock-kicker">A LITTLE WORLD IS WAITING FOR YOU ♡</p>
+      <button class="lock-infinity" id="secretInfinity" type="button" aria-label="Infinity">∞</button>
+      <p class="lock-label">A BIRTHDAY ADVENTURE</p>
+      <h1>Not just a birthday.<br><span>A whole little universe.</span></h1>
+      <p class="lock-copy">Made from memories, inside jokes, a little chaos, and a ridiculous amount of love.</p>
+      <div class="countdown-shell">
+        <div class="countdown" aria-label="Countdown to October 10, 2026">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+      </div>
+      <p class="unlock-date">SATURDAY · 10 OCTOBER 2026 · 12:00 AM IST</p>
+      <button id="earlyButton" class="ghost-btn" type="button">THE DOOR IS STILL LOCKED ♡</button>
+      <button id="enterButton" class="primary-btn hidden" type="button">ENTER YOUR LITTLE WORLD ∞</button>
+      <p class="lock-note" id="lockNote">When the clock reaches zero, the story begins. ♡</p>
+      <p class="lock-secret-hint" aria-hidden="true">∞</p>
+    </div>
+  </section>
+
+  <!-- MAIN ADVENTURE -->
+  <main id="adventure" class="hidden">
+    <audio id="song" preload="auto" loop>
+      <source src="music/a-thousand-years.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Pause music">♫ <span>Music</span></button>
+
+    <section class="chapter hero-chapter" data-chapter="0">
+      <div class="hero-glow"></div>
+      <div class="hero-orbit hero-orbit-one"></div>
+      <div class="hero-orbit hero-orbit-two"></div>
+      <p class="eyebrow">CHAPTER 00 · THE DOOR IS OPEN ♡</p>
+      <button class="infinity-portal" id="infinityPortal" type="button" aria-label="Start the birthday adventure"><span>∞</span><small>FOLLOW THE INFINITY</small></button>
+      <p class="hero-mini">10.10.2026 · MADE FOR ONE VERY SPECIAL PERSON</p>
+      <h2>It's your day.<br><span>So let's make it a story.</span></h2>
+      <p class="hero-copy">Saying "happy birthday" was never going to be enough.</p>
+      <p class="hero-copy soft">So I made you a little universe to walk through, one chapter at a time.</p>
+      <div class="hero-trust-row"><span>MEMORIES</span><i>∞</i><span>LAUGHTER</span><i>∞</i><span>US</span></div>
+      <button class="primary-btn next-btn hero-start" data-next="1">START THE ADVENTURE ♡</button>
+      <p class="hero-footnote">Tip: tap the infinity whenever you see it. It usually means something. ♡</p>
+    </section>
+
+    <section class="chapter split-chapter infinity-chapter" data-chapter="1">
+      <div class="chapter-number">01</div>
+      <p class="eyebrow">TWO PLACES. ONE STORY.</p>
+      <div class="tech-schbang-lockup"><span>TECH</span><b>∞</b><span>SCHBANG</span></div>
+      <h2>Where our story<br><span>found its infinity.</span></h2>
+      <p class="lead">Techinfinity is where the first chapter happened. SCHBANG became a major part of the story that brought us back. Different chapters, same us.</p>
+      <div class="origin-cards">
+        <button class="origin-card" id="techCard" type="button"><small>CHAPTER ONE</small><strong>TECHINFINITY</strong><span>Where it all started →</span></button>
+        <button class="origin-card schbang" id="schbangCard" type="button"><small>CHAPTER TWO</small><strong>SCHBANG</strong><span>Where the story found its way back →</span></button>
+      </div>
+      <button class="infinity-button" id="infinityReveal" type="button">TAP THE ∞</button>
+      <p id="infinityMessage" class="infinity-message">Two chapters. One story. Tap the infinity to see what it means. ♡</p>
+      <div class="infinity-line"><span></span> ∞ <span></span></div>
+      <button class="primary-btn next-btn" data-next="2">ENTER OUR STORY ♡</button>
+    </section>
+
+    <section class="chapter timeline-chapter" data-chapter="2">
+      <div class="chapter-number">02</div>
+      <p class="eyebrow">THE TIMELINE WE DIDN'T KNOW WE WERE WRITING</p>
+      <h2>From one little flirt<br><span>to an infinite us.</span></h2>
+      <div class="timeline">
+        <article><span class="dot"></span><small>DECEMBER 2022</small><h3>The hand in the river.</h3><p>I gave you my hand in the river to flirt with you. You very confidently rejected me. Iconic beginning. 😂</p></article>
+        <article><span class="dot"></span><small>FEBRUARY 2023</small><h3>We couldn't stop talking.</h3><p>Somewhere between all those conversations, the flirting stopped being a joke and became something neither of us could ignore.</p></article>
+        <article><span class="dot"></span><small>14 MARCH 2023</small><h3>And then there was us.</h3><p>The date that became one of the biggest chapters of our story.</p></article>
+        <article><span class="dot"></span><small>MAY 2024 → FEBRUARY 2025</small><h3>The part we had to survive.</h3><p>We parted ways. Life took us in different directions for a while, but apparently our story had other plans.</p></article>
+        <article><span class="dot"></span><small>SCHBANG</small><h3>And somehow, back together.</h3><p>SCHBANG brought us together again, and here we are, still standing strong, still fighting against all odds, still choosing this story.</p></article>
+        <article><span class="dot"></span><small>NOW</small><h3>Still us. Still infinite.</h3><p>Not perfect. Not always easy. But real, ridiculous, stubborn, loving, and ours.</p></article>
+      </div>
+      <button class="primary-btn next-btn" data-next="3">NEXT CHAPTER ♡</button>
+    </section>
+
+    <section class="chapter quiz-chapter" data-chapter="3">
+      <div class="chapter-number">03</div>
+      <p class="eyebrow">HOW WELL DO YOU KNOW US?</p>
+      <h2>Let's test that. 👀</h2>
+      <div id="quizCard" class="game-card">
+        <div class="quiz-meta"><span id="questionCount">01 / 06</span><span id="quizScore">0 points</span></div>
+        <h3 id="questionText"></h3>
+        <div id="answers" class="answers"></div>
+        <p id="quizFeedback" class="feedback"></p>
+        <button id="nextQuestion" class="primary-btn hidden" type="button">NEXT ♡</button>
+      </div>
+      <div id="quizResult" class="result-card hidden">
+        <p class="eyebrow">FINAL SCORE</p>
+        <div id="finalScore" class="big-score">0/6</div>
+        <h3 id="scoreMessage"></h3>
+        <button class="primary-btn next-btn" data-next="4">UNLOCK THE GAME ♡</button>
+      </div>
+    </section>
+
+    <section class="chapter game-chapter" data-chapter="4">
+      <div class="chapter-number">04</div>
+      <p class="eyebrow">THE MAIN EVENT</p>
+      <h2>Catch my heart ♡</h2>
+      <p class="lead">Catch the good stuff. Avoid the broken hearts. And obviously, Diet Coke is worth extra points.</p>
+      <div class="game-hud"><span>SCORE <b id="gameScore">0</b></span><span>TIME <b id="gameTime">20</b></span><span>BEST <b id="bestScore">0</b></span></div>
+      <div id="catchGame" class="catch-game" aria-label="Catch the falling hearts game">
+        <div class="game-start-overlay" id="gameOverlay"><button id="startGame" class="primary-btn" type="button">START GAME ♡</button></div>
+        <div id="player" class="player">♡</div>
+      </div>
+      <p id="gameResult" class="feedback"></p>
+      <button id="continueAfterGame" class="primary-btn hidden" type="button">NEXT SURPRISE ♡</button>
+    </section>
+
+    <section class="chapter coke-chapter" data-chapter="5">
+      <div class="chapter-number">05</div>
+      <p class="eyebrow">THE MOST SERIOUS PART OF THIS WEBSITE</p>
+      <h2>Welcome to the<br><span>Diet Coke universe.</span></h2>
+      <p class="lead coke-lead">Some relationships have a third wheel. Ours is carbonated, cold and somehow always involved.</p>
+      <div class="coke-poster-wrap">
+        <div class="coke-poster">
+          <img src="images/diet-coke-universe.png" alt="Diet Coke universe poster with a chilled Diet Coke can surrounded by blue orbit rings and birthday-themed notes" loading="eager" decoding="async">
+          <button class="coke-hit-area" id="cokeCan" type="button" aria-label="Tap the Diet Coke can">
+            <span class="sr-only">Tap the Diet Coke can</span>
+          </button>
+        </div>
+      </div>
+      <div class="coke-counter"><span id="cokeCount">00</span><small>taps of devotion</small></div>
+      <p id="cokeMessage" class="coke-message">Tap the can. Let's see how committed you really are. 🥤</p>
+      <div id="cokeFinal" class="coke-final hidden"><span>OFFICIAL FINDING</span><strong>Diet Coke is part of the lore.</strong><p>And somehow, after all this time, I still rank above it. I think. ♡</p></div>
+      <button class="primary-btn next-btn" data-next="6">ENTER THE MEMORY UNIVERSE ♡</button>
+    </section>
+
+    <section class="chapter memory-lane-chapter" data-chapter="6">
+      <div class="chapter-number">06</div>
+      <p class="eyebrow">A LITTLE MEMORY DOWN THE LANE</p>
+      <h2>Stop. Look.<br><span>Remember.</span></h2>
+      <p class="lead">Ten pictures. No right answers. Tell me whatever comes to your mind when you see each one.</p>
+      <div class="memory-progress"><span id="memoryProgress">MEMORY 01 / 10</span><div><i id="memoryBar"></i></div></div>
+      <div class="memory-card">
+        <div class="memory-photo-wrap"><img id="memoryPhoto" src="images/all/memory-01.jpg" alt="Memory 1 of us"></div>
+        <div class="memory-prompt">
+          <p class="eyebrow">YOUR MEMORY</p>
+          <h3>What do you feel or remember when you see this?</h3>
+          <textarea id="memoryAnswer" maxlength="1200" placeholder="Write whatever comes to mind... there is no right answer. ♡"></textarea>
+          <div class="memory-actions"><button id="memoryNext" class="primary-btn" type="button">NEXT MEMORY →</button></div>
+        </div>
+      </div>
+      <div id="memoryFinish" class="memory-finish hidden">
+        <div class="infinity-mark small">∞</div>
+        <p class="eyebrow">MEMORY LANE COMPLETE</p>
+        <h3>You didn't just look at them.<br><span>You remembered them.</span></h3>
+        <p>Ten little moments, from your side of the story. Send them to me when you're ready. ♡</p>
+        <form id="memoryForm" action="https://formsubmit.co/aamenaunfiltered@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="A little Memory Lane from the birthday boy ♡">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="memory_01" id="memory01Field">
+          <input type="hidden" name="memory_02" id="memory02Field">
+          <input type="hidden" name="memory_03" id="memory03Field">
+          <input type="hidden" name="memory_04" id="memory04Field">
+          <input type="hidden" name="memory_05" id="memory05Field">
+          <input type="hidden" name="memory_06" id="memory06Field">
+          <input type="hidden" name="memory_07" id="memory07Field">
+          <input type="hidden" name="memory_08" id="memory08Field">
+          <input type="hidden" name="memory_09" id="memory09Field">
+          <input type="hidden" name="memory_10" id="memory10Field">
+          <button class="primary-btn" type="submit">SEND MY MEMORIES ♡</button>
+        </form>
+        <p class="memory-note">Your answers stay in this little adventure until you choose to send them. The first time this form is used, FormSubmit will ask me to confirm the destination email.</p>
+      </div>
+      <button id="memoryContinue" class="primary-btn hidden" type="button">KEEP WALKING →</button>
+    </section>
+
+    <section class="chapter scrapbook-chapter" data-chapter="7">
+      <div class="chapter-number">07</div>
+      <p class="eyebrow">THE REST OF US</p>
+      <h2>A scrapbook of<br><span>the chaos in between.</span></h2>
+      <p class="lead">Because apparently ten memories were nowhere near enough.</p>
+      <div class="marquee" aria-hidden="true"><div>laughing · annoying each other · dates · MCD · ramen · random days · flowers · road trips · us · us · us · ∞ · </div><div>laughing · annoying each other · dates · MCD · ramen · random days · flowers · road trips · us · us · us · ∞ · </div></div>
+      <div class="scrapbook" id="scrapbook"></div>
+      <div class="scrapbook-end"><span>TO BE CONTINUED</span><strong>∞</strong><p>Somehow, after all the chaos, we kept making memories.</p></div>
+      <button class="primary-btn next-btn" data-next="8">I HAVE ONE MORE THING TO SAY ♡</button>
+    </section>
+
+    <section class="chapter letter-chapter" data-chapter="8">
+      <div class="chapter-number">08</div>
+      <p class="eyebrow">THE PART WHERE I GET SERIOUS</p>
+      <h2>A letter for you.</h2>
+      <article class="letter-card">
+        <p>Baby,</p>
+        <p>Happy birthday to the person who has somehow made the most ordinary days feel like memories I want to keep forever.</p>
+        <p>When I think about us, I don't just think about the big moments. I think about all the tiny things. The way you notice the smallest details. The way you treat me like a princess without even making a big deal out of it. The random plans that somehow turn into the best days. The laughs that happen five minutes after a fight because apparently neither of us can stay serious for very long.</p>
+        <p>You are so much more special to me than I think I know how to put into words. I hope you always remember that there is someone in this world who notices you, chooses you, laughs with you, gets annoyed with you, and loves you through all the ridiculous little things that make you who you are.</p>
+        <p>And if I could choose one thing for you this year, it would be for you to see yourself the way I see you. Loved. Important. Worth celebrating. And deeply, deeply special.</p>
+        <p>I don't know what every year ahead of us will look like, but I know I want a lot more random dates, stupid jokes, MCD runs, memories, fights that last five minutes, and laughter that lasts much longer.</p>
+        <p>Happy 27th, baby. ♡</p>
+        <p class="signature">From the girl who will keep choosing you, again and again. ∞</p>
+      </article>
+      <button class="primary-btn next-btn" data-next="9">FINAL CHAPTER ♡</button>
+    </section>
+
+    <section class="chapter final-chapter" data-chapter="9">
+      <div id="finalConfetti"></div>
+      <div class="infinity-mark final">∞</div>
+      <p class="eyebrow">THE END... OR MAYBE NOT</p>
+      <h2>Happy birthday,<br><span>my love.</span></h2>
+      <p class="final-copy">From Techinfinity, through SCHBANG, through every version of us, to whatever infinity looks like next.</p>
+      <p class="final-line">I hope 27 is kind to you. And selfishly, I hope I get to be there for all of it. ♡</p>
+      <div class="final-photo"><img src="images/favorite-photo.jpg" alt="Another favourite memory of us"></div>
+      <div class="final-infinity">you + me = ∞</div>
+      <button id="replay" class="ghost-btn" type="button">REPLAY OUR ADVENTURE ↻</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
